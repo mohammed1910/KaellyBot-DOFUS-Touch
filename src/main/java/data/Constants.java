@@ -76,7 +76,7 @@ public class Constants {
     /**
      * Official Dofus account on Twitter
      */
-    public final static long dofusTwitter = 3947714549;
+    public final static long dofusTwitter = 3947714549L;
 
     /**
      * Character limit for nickname discord

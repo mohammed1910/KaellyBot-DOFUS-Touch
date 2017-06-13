@@ -79,7 +79,7 @@ public class Rule34Command extends AbstractCommand{
     @Override
     public String helpDetailed(String prefixe) {
         return help(prefixe)
-                //+ "\n`" + prefixe + name + "` : poste une image NSFW au hasard."
-                + "\n`" + prefixe + name + " `*`tag1 tag2 ...`* : poste une image NSFW en rapport avec les tag précisés.\n";
+                //+ "\n" + prefixe + "`" + name + "` : poste une image NSFW au hasard."
+                + "\n" + prefixe + "`" + name + " `*`tag1 tag2 ...`* : poste une image NSFW en rapport avec les tag précisés.\n";
     }
 }

@@ -67,10 +67,10 @@ public abstract class AbstractCommand implements Command {
         String prefix = Constants.prefixCommand;
         if (message.getGuild() != null)
             prefix = Guild.getGuilds().get(message.getGuild().getStringID()).getPrefixe();
-        prefix = prefix.replaceAll("\\*", "\\*") // Italic & Bold
-                .replaceAll("_", "\\_")          // Underline
-                .replaceAll("~", "\\~")          //Strike
-                .replaceAll("`", "\\`");         //Code
+        prefix = prefix.replaceAll("\\*", "\\\\*") // Italic & Bold
+                .replaceAll("_", "\\_")            // Underline
+                .replaceAll("~", "\\~")            // Strike
+                .replaceAll("\\", "\\\\`");        // Code
         return prefix;
     }
 

@@ -37,7 +37,7 @@ public class Almanax implements Embedded{
         EmbedBuilder builder = new EmbedBuilder();
 
         builder.withTitle("Almanax du " + day);
-        builder.withUrl(Constants.almanaxURL + day);
+        builder.withUrl(Constants.almanaxURL + day + "?game=dofustouch");
         builder.withDescription(quest);
 
         builder.withColor(new Random().nextInt(16777216));
@@ -54,9 +54,9 @@ public class Almanax implements Embedded{
     }
 
     private static Almanax gatheringOnlineData(String date) throws IOException {
-        LOG.info("connecting to " + Constants.almanaxURL + date + " ...");
-        Document doc = Jsoup.parse(new URL(Constants.almanaxURL + date).openStream(), "UTF-8",
-                Constants.almanaxURL + date);
+        LOG.info("connecting to " + Constants.almanaxURL + date + "?game=dofustouch" + " ...");
+        Document doc = Jsoup.parse(new URL(Constants.almanaxURL + date + "?game=dofustouch").openStream(), "UTF-8",
+                Constants.almanaxURL + date + "?game=dofustouch");
 
         String bonus = doc.getElementsByClass("more").first()
                 .clone().getElementsByClass("more-infos").empty().parents().first().text();

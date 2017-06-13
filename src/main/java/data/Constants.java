@@ -10,7 +10,7 @@ public class Constants {
     /**
      * Application name
      */
-    public final static String name = "Kaelly";
+    public final static String name = "Kaelly Touch";
 
     /**
      * Author
@@ -20,7 +20,7 @@ public class Constants {
     /**
      * URL for github KaellyBot repository
      */
-    public final static String git = "https://github.com/Kaysoro/KaellyBot";
+    public final static String git = "https://github.com/Ehstrali/KaellyBot-DOFUS-Touch";
 
     /**
      * Database name
@@ -37,12 +37,12 @@ public class Constants {
     /**
      * Game desserved
      */
-    public final static String game = "Dofus";
+    public final static String game = "DOFUS Touch";
 
     /**
      * Official Ankama Game URL
      */
-    public final static String officialURL = "http://www.dofus.com";
+    public final static String officialURL = "http://www.dofus-touch.com";
 
     /**
      * Official Dofus URL for almanax
@@ -76,7 +76,7 @@ public class Constants {
     /**
      * Official Dofus account on Twitter
      */
-    public final static long dofusTwitter = 72272795L;
+    public final static long dofusTwitter = 3947714549;
 
     /**
      * Character limit for nickname discord

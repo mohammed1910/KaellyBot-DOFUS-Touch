@@ -37,7 +37,7 @@ public class Almanax implements Embedded{
         EmbedBuilder builder = new EmbedBuilder();
 
         builder.withTitle("Almanax du " + day);
-        builder.withUrl(Constants.almanaxURL + day + "?game=dofustouch");
+        builder.withUrl(Constants.almanaxURL + day);
         builder.withDescription(quest);
 
         builder.withColor(new Random().nextInt(16777216));
@@ -54,15 +54,15 @@ public class Almanax implements Embedded{
     }
 
     private static Almanax gatheringOnlineData(String date) throws IOException {
-        LOG.info("connecting to " + Constants.almanaxURL + date + "?game=dofustouch" + " ...");
-        Document doc = Jsoup.parse(new URL(Constants.almanaxURL + date + "?game=dofustouch").openStream(), "UTF-8",
+        LOG.info("connecting to " + Constants.almanaxURL + date + " ...");
+        Document doc = Jsoup.parse(new URL(Constants.almanaxURL + date).openStream(), "UTF-8",
                 Constants.almanaxURL + date + "?game=dofustouch");
 
-        String bonus = doc.getElementsByClass("more").first()
-                .clone().getElementsByClass("more-infos").empty().parents().first().text();
-        String quest = doc.getElementsByClass("more-infos").first().child(0).text();
-        String ressourceURL = doc.getElementsByClass("more-infos-content").first().children().attr("src");
-        String offrande = doc.getElementsByClass("fleft").get(3).text();
+        String bonus = doc.getElementsByClass("more").last()
+                .clone().getElementsByClass("more-infos").empty().parents().last().text();
+        String quest = doc.getElementsByClass("more-infos").last().child(0).text();
+        String ressourceURL = doc.getElementsByClass("more-infos-content").last().children().attr("src");
+        String offrande = doc.getElementsByClass("fleft").last().text();
 
         return new Almanax(bonus, offrande, date, quest, ressourceURL);
     }

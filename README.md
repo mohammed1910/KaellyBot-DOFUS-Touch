@@ -1,7 +1,7 @@
-# KaellyBOT [![Build Status](https://travis-ci.org/Kaysoro/KaellyBot.svg?branch=master)](https://travis-ci.org/Kaysoro/KaellyBot) [![Dependency Status](https://www.versioneye.com/user/projects/587eb975452b8300313609ee/badge.svg?style=flat)](https://www.versioneye.com/user/projects/587eb975452b8300313609ee) [![Coverage Status](https://coveralls.io/repos/github/Kaysoro/KaellyBot/badge.svg?branch=master)](https://coveralls.io/github/Kaysoro/KaellyBot?branch=master)
-KaellyBOT est destinée à fournir des commandes utiles à la communauté de DOFUS ! L'intégralité de son code est libre d'accès. Si vous avez des questions, des suggestions ou que vous souhaitez juste passer un coucou, rejoignez le discord : [![Support Server Invite](https://img.shields.io/badge/Join-KaellyBOT%20Support-7289DA.svg?style=flat)](https://discord.gg/CyJCFDk)
+# KaellyBOT DOFUS Touch[![Build Status](https://travis-ci.org/Kaysoro/KaellyBot.svg?branch=master)](https://travis-ci.org/Kaysoro/KaellyBot) [![Dependency Status](https://www.versioneye.com/user/projects/587eb975452b8300313609ee/badge.svg?style=flat)](https://www.versioneye.com/user/projects/587eb975452b8300313609ee) [![Coverage Status](https://coveralls.io/repos/github/Kaysoro/KaellyBot/badge.svg?branch=master)](https://coveralls.io/github/Kaysoro/KaellyBot?branch=master)
+KaellyBOT DOFUS Touch est destinée à fournir des commandes utiles à la communauté de DOFUS Touch ! L'intégralité de son code est libre d'accès. Si vous avez des questions, des suggestions ou que vous souhaitez juste passer un coucou, rejoignez le discord : [![Support Server Invite](https://img.shields.io/badge/Join-KaellyBOT%20Support-7289DA.svg?style=flat)](https://discord.gg/CyJCFDk)
 
-## Ajoutez KaellyBOT à votre serveur : [![Official Kaelly Invite](https://img.shields.io/badge/Add-KaellyBOT-0199FE.svg?style=flat)](https://discordapp.com/oauth2/authorize?&client_id=202916641414184960&scope=bot)
+## Ajoutez KaellyBOT DOFUS Touch à votre serveur : [![Official Kaelly Invite](https://img.shields.io/badge/Add-KaellyBOT-0199FE.svg?style=flat)](https://discordapp.com/oauth2/authorize?&client_id=323396178341265408&scope=bot)
 
 ## Commandes
 
@@ -19,13 +19,13 @@ La commande `!help command` explique de façon détaillée la commande spécifi�
 
 ### Item
 
-`!item` : Renvoie les statistiques d'un item du jeu Dofus.  
+`!item` : Renvoie les statistiques d'un item du jeu DOFUS Touch.  
 
 `!item item` : Renvoie les statistiques de l'item spécifié : son nom peut être approximatif s'il est suffisemment précis. A noter que les items inférieurs au niveau 50 sont exclus.  
 
 ### Job
 
-`!job` : Renvoie la liste des métiers du jeu Dofus.  
+`!job` : Renvoie la liste des métiers du jeu DOFUS Touch.  
 `!job métier` : Renvoie l'annuaire des artisans pour ce métier.  
 `!job métier niveau` : Vous ajoute à l'annuaire du métier correspondant. Si vous indiquez 0, vous êtes supprimé de l'annuaire pour ce métier.  
 `!job -all niveau` : Vous ajoute à l'annuaire pour tous les métiers correspondants. Si vous indiquez 0, vous êtes supprimé de chaque annuaire.  
@@ -65,7 +65,7 @@ La commande `!help command` explique de façon détaillée la commande spécifi�
 
 ### RSS
 
-`!rss true` : Poste les news à partir du flux RSS de Dofus.com. Fonctionne aussi avec `on` et `0`.  
+`!rss true` : Poste les news à partir du flux RSS de Dofus-touch.com. Fonctionne aussi avec `on` et `0`.  
 `!rss false` : Ne poste plus les flux RSS dans le salon. Fonctionne aussi avec `off` et `1`.  
 
 ### Rule34 (NSFW)
@@ -79,9 +79,9 @@ La commande `!help command` explique de façon détaillée la commande spécifi�
 
 ### Twitter
 
-`!twitter` : Poste les tweets de Dofusfr dans un salon; nécessite un niveau d'administration 2 (Modérateur) minimum.  
+`!twitter` : Poste les tweets de DofusTouch dans un salon; nécessite un niveau d'administration 2 (Modérateur) minimum.  
 
-`!twitter true` : Poste les tweets de Dofusfr. Fonctionne aussi avec `on` et `0`.  
+`!twitter true` : Poste les tweets de DofusTouch. Fonctionne aussi avec `on` et `0`.  
 `!twitter false` : Ne poste plus les tweets dans le salon. Fonctionne aussi avec `off` et `1`.  
 
 ### Whois

@@ -52,7 +52,7 @@ public abstract class AbstractCommand implements Command {
     @Override
     public Matcher getMatcher(IMessage message){
         String prefixe = getPrefix(message);
-        return Pattern.compile("^" Pattern.quote(prefixe) name pattern "$").matcher(message.getContent());
+        return Pattern.compile("^" + Pattern.quote(prefixe) + name + pattern + "$").matcher(message.getContent());
     }
 
     @Override

@@ -95,7 +95,53 @@ Autorise ou non Kaelly à poster des tweets dans un salon.
 
 Affiche la page personelle d'un joueur. 
 `!whois *pseudo*` : Donne la page personnelle associée au pseudo. Celui-ci doit être exact.  
-`!whois *pseudo serveur*` : Est à utiliser lorsque le pseudo ne suffit pas pour déterminer la fiche d'un personnage.  
+`!whois *pseudo serveur*` : Est à utiliser lorsque le pseudo ne suffit pas pour déterminer la fiche d'un personnage. 
+
+# Participer au projet
+
+## Modifier KaellyBOT
+
+Tout le monde peut aider pour le développement de KaellyBOT ! Il suffit de créer un pull request qui sera accepté si il ne créé aucun problème avec la branche principale : https://github.com/Kaysoro/KaellyBot/pulls.
+
+## Créer votre Bot
+
+### Obtenir un token Discord
+
+1. Connectez vous sur le [site developers discord](https://discordapp.com/developers/applications/me).
+2. Dans Application > MyApp : Cliquez sur New App.
+3. Renseignez le nom du Bot, une brève description et une icône.
+4. Une fois créé, Cliquez sur "Create a bot user".
+5. Cochez la case "Public bot" si vous souhaitez qu'il soit accessible par n'importe qui.
+6. Récupérez le client ID et le token, ils vous serviront à ajouter votre bot sur un serveur et à le mettre en route.
+
+Ne diffusez pas votre token, il permettrai à n'importe qui de modifier votre bot.
+
+### Obtenir un lien d'invitation
+
+Vous avez créé votre bot sur le site de Discord et vous souhaitez l'inviter sur un serveur.
+Prennez le client ID de votre bot et placez le à la place de CLIENT_ID dans l'url suivante :
+https://discordapp.com/oauth2/authorize?&client_id=CLIENT_ID&scope=bot
+
+### Connecter le bot à Discord
+
+Maintenant que vous avez déclaré votre application sur la plateforme Discord, il suffit d'ajouter le token précèdemment copié dans le fichier [config.properties](https://github.com/Ehstrali/KaellyBot-DOFUS-Touch/blob/master/config.properties), de telle sorte que : discord.token=TOKEN.
+
+Avant de continuer il faut ajouter ce fichier pour que votre bot fonctionne : [bdd.sqlite](https://mega.nz/#!l4hwjRSJ!GMuk5P9qt3EZpuDD_YCYcNUPZd8CRx9LvuHQm_AA4PQ). Mettez le dans votre dossier Kaelly.
+
+#### Créer le .jar pour démarrer le bot :
+
+- `cd VotreProjet`
+- `mvn clean compile`
+- `mvn assembly:single`
+
+#### Démarrer le .jar :
+
+- En double cliquant dessus (Ne fonctionne pas forcément).
+- En l'exécutant depuis la console : `java -jar jarfile` (Permet aussi d'avoir les logs du bot).
+
+#### Heberger le .jar :
+
+Vous pouvez soit héberger le bot sur un serveur vous donnant accès à une console. Ou laisser un ordinateur allumé pour héberger le bot (Un Raspberry pi par exemple).
 
 ## Licence
 
